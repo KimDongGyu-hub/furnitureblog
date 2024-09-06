@@ -1,0 +1,113 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 800px;
+}
+
+header {
+  position: relative;
+  width: 1000px;
+  height: 300px; /* 헤더의 높이를 설정 */
+  background-image: url("./assets/headerimg.jpg"); /* 이미지를 배경으로 설정 */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  position: absolute;
+  top: 10%;
+  color: white; /* 글자 색상을 이미지 위에서 잘 보이도록 변경 */
+  font-size: 48px;
+  font-family: "Arial", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* 텍스트에 그림자 추가 */
+}
+/* Navigation Sidebar */
+.App-nav {
+  background-color: #f4f4f4;
+  padding: 15px;
+  width: 200px;
+  position: fixed; /* 요소를 고정 */
+  top: 0; /* 페이지 상단에 고정 */
+  right: 0; /* 오른쪽에 고정 */
+  height: 100%; /* 전체 높이 */
+}
+
+.App-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.App-nav ul li {
+  margin-bottom: 10px;
+}
+
+.App-nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Main Content */
+.App-main {
+  padding: 20px;
+  flex: 1;
+  margin-right: 220px; /* 네비게이션 공간을 고려하여 마진 추가 */
+}
+
+.App-main h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.App-main section {
+  display: flex;
+  flex-direction: column;
+}
+
+.App-main article {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.App-main article h3 {
+  margin-top: 0;
+}
+
+/* Footer */
+.App-footer {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.furniture-details {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.furniture-item {
+  margin-bottom: 20px;
+}
+
+.furniture-item h3 {
+  margin-top: 0;
+}
